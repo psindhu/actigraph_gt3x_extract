@@ -2,9 +2,7 @@ import os
 import glob
 import zipfile
 
-files = glob.iglob('/work1/sdka/data/**/*.gt3x', recursive=True)
-# files = glob.iglob('/home/sdka/phd/goactiwe/data/ActiGraph/**/*.gt3x',
-#                    recursive=True)
+files = glob.iglob('**/*.gt3x', recursive=True)
 
 for f in files:
     print('Unzipping %s' % f)
