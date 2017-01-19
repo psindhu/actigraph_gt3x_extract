@@ -1,6 +1,6 @@
 addpath('jsonlab')
 
-basedir = '';
+basedir = '/run/user/1000/gvfs/sftp:host=ipns.compute.dtu.dk/home/sdka/data/actigraph/';
 file_list = getAllFiles(basedir);
 
 for i=1:length(file_list)

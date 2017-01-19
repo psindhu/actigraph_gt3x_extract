@@ -29,7 +29,7 @@ def read12(x):
 def unpack(file_dir):
     file_path = os.path.join(file_dir, 'log.bin')
     if not os.path.exists(file_path):
-        error('No file: %s' % file_path)
+        raise ValueError('No file: %s' % file_path)
 
     acc = dict()
     lux = dict()
